@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Professor</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ professor.id }}</td>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <td>{{ professor.nome }}</td>
+            </tr>
+            <tr>
+                <th>Cref</th>
+                <td>{{ professor.cref }}</td>
+            </tr>
+            <tr>
+                <th>Descricao</th>
+                <td>{{ professor.descricao }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="admin_botoes">
+        <li>
+            <a href="{{ path('professor_index') }}" class="btn btn-default">Voltar</a>
+        </li>
+        <li>
+            <a href="{{ path('professor_edit', { 'id': professor.id }) }}" class="btn btn-default">Editar</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete" class="btn btn-danger">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

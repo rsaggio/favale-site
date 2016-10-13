@@ -1,0 +1,144 @@
+{% extends 'AppBundle:Site:base.html.twig' %}
+
+{%block body %}
+
+        <!-- Page Titles & Slider or image -->
+        <section class="main-row main-row-slim">
+            <div class="main-header main-header-blog">
+                <!-- Loading Spinner -->
+                <div id="spinner" class="spinner">
+                    <div class="wBall" id="wBall_1">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_2">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_3">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_4">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_5">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                </div>
+                <!--/ Loading Spinner -->
+
+                <!-- Page Header -->
+                <div class="page-header invisible" style="background-image: url(/images/temp/banner5.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-title-before invisible" data-animate-in="fadeInLeft">Blog Favale</div>
+                                <h1 class="page-title invisible" data-animate-in="fadeInLeft">Bem vindo ao nosso blog</h1>
+                                <div class="page-desc invisible" data-animate-in="fadeInRight">Através do nosso blog você pode se manter sempre informado</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/ Page Header -->
+            </div>
+        </section>
+        <!--/ Page Titles & Slider or image -->
+
+        <!-- Middle -->
+        <section class="main-row">
+            <div class="container">
+                <div class="row">
+                    <!-- Content -->
+                    <div id="primary" class="col-sm-8 content-area">
+                        <!-- PostList -->
+                        <section class="postlist">
+                            <!-- Post -->
+                            {% if posts|length < 1 %}
+                            <h1>Nenhum post encontrado</h1>
+                            {% endif %}
+                            {% for post in posts %}
+                                <article class="post clearfix">
+                                    <span class="post-thumbnail pull-left rounded"><img src="/uploads/{{ post.imagem }}" alt="{{ post.titulo }}"></span>
+                                    <div class="entry-meta">
+                                        <time class="entry-date" datetime="{{ post.data|date('Y-m-d') }}">{{ post.data|date('d/m/Y') }}</time>
+                                        <span class="author"> por <a href="#">{{ post.autor.nome }}</a></span>
+                                        <span class="cat-links"> em <a href="#" title="View all posts in Events" rel="category tag">{{ post.categoria }}</a></span>
+                                    </div>
+                                    <div class="entry-content">
+                                        <h2 class="entry-title"><a href="{{ path('detalhePost', {'slug': post.slug}) }}">{{ post.titulo }}</a></h2>
+                                        <p>{{ post.texto|slice(0, 200) }}</p>
+                                    </div>
+                                    <footer class="entry-meta clearfix">
+                                        <a href="{{ path('detalhePost', {'slug': post.slug}) }}" class="btn btn-small btn-transparent"><span>Ler mais</span></a>
+                                    </footer>
+                                </article>
+                            {% endfor %}
+                            <!--/ Post -->
+                        </section>
+                        <!--/ PostList -->
+
+                        <!-- Pagination -->
+                        <nav style="display:none" class="navigation paging-navigation" role="navigation">
+                            <div class="pagination loop-pagination">
+                                <a href="#" class="page_prev"><i class="tficon-chevron-left-alt2"></i></a>
+                                <div class="page-number"><span>1</span> of <span>47</span></div>
+                                <a class="page_next" href="#"><i class="tficon-chevron-right-alt2"></i></a>
+                            </div>
+                        </nav>
+                        <!--/ Pagination -->
+                    </div>
+                    <!--/ Content -->
+
+                    <!-- SideBar -->
+                    <div id="secondary" class="col-sm-4 sidebar widget-area">
+                        <div class="inner">
+                            <!-- Widget Search -->
+                            <div class="widget widget-search">
+                                <h3 class="widget-title">Procurar no blog</h3>
+                                <form id="searchform" method="get" action="{{ path('buscaPost') }}">
+                                    <div class="field-text buttoned">
+                                        <input type="text" placeholder="Digite uma busca" name="search" value="">
+                                        <button type="submit"><i class="tficon-arrow-right"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ Widget Search -->
+
+                            <!-- Widget Fresh Post -->
+                            <div class="widget widget-freshpost">
+                                <h3 class="widget-title">Posts por autor</h3>
+                                <ul class="side-postlist">
+                                    {% for autor in autores %}
+                                        <li><a href="{{ path('buscaPorAutor', {'nome': autor.nome})}}"><span>{{autor.nome}}</span></a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <!--/ Widget Fresh Post -->
+
+                            <!-- Widget Newsletter -->
+                            <div class="widget widget-newsletter">
+                                <h3 class="widget-title">Novidades</h3>
+                                <div class="widget-content">
+                                    <p>Quer receber as ultimas novidades?</p>
+                                </div>
+                                <form method="post" action="{{ path('newsletter') }}">
+                                    <div class="field-text buttoned">
+                                        <input type="email" value="" name="email" placeholder="Digite o seu email">
+                                        <button type="submit" title="Subscribe"><i class="tficon-arrow-right"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ Widget Newsletter -->
+
+                    </div>
+                    <!--/ SideBar -->
+
+                </div>
+            </div>
+        </section>
+        <!--/ Middle -->
+{% endblock %}

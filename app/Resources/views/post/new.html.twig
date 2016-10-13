@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <h1>Criação de post</h1>
+        {{ form_start(form, {'method': 'POST'}) }}
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label>Título</label>
+                    {{ form_widget(form.titulo, { 'attr': {'class': 'form-control'} }) }}
+                </div>
+                <div class="form-group">
+                    <label>Data de publicação</label>
+                    {{ form_widget(form.data) }}
+                </div>
+                <div class="form-group">
+                    <label>Imagem</label>
+                    {{ form_widget(form.arquivoImagem, { 'attr': {'class': 'form-control'} }) }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Autor</label>
+                    {{ form_widget(form.autor, { 'attr': {'class': 'form-control'} }) }}
+                </div>
+                <div class="form-group">
+                    <label>Categoria</label>
+                    {{ form_widget(form.categoria, { 'attr': {'class': 'form-control'} }) }}
+                </div>
+                <div class="form-group">
+                    <label>Slug</label>
+                    {{ form_widget(form.slug, { 'attr': {'class': 'form-control'} }) }}
+                </div>
+            </div>
+            <div class="col-md-12">
+                <p><strong>Texto</strong></p>
+                {{ form_widget(form.texto) }}
+            </div>
+            <div class="col-md-12" style="margin-top:20px">
+                <input type="submit" class="btn btn-success" value="Postar">
+                <a href="{{ path('post_index') }}" class="btn btn-danger">Voltar</a>
+            </div>
+        {{ form_end(form) }}
+    </div>
+</div>
+
+
+
+{% endblock %}

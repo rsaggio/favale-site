@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Newsletter</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ newsletter.id }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ newsletter.email }}</td>
+            </tr>
+            <tr>
+                <th>Datacadastro</th>
+                <td>{% if newsletter.dataCadastro %}{{ newsletter.dataCadastro|date('d/m/Y') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="admin_botoes">
+        <li>
+            <a href="{{ path('admin_newsletter_index') }}" class="btn btn-default">Voltar</a>
+        </li>
+    </ul>
+{% endblock %}

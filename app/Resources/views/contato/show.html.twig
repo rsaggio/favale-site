@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Contato</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ contato.id }}</td>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <td>{{ contato.nome }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ contato.email }}</td>
+            </tr>
+            <tr>
+                <th>Mensagem</th>
+                <td>{{ contato.mensagem }}</td>
+            </tr>
+            <tr>
+                <th>Data</th>
+                <td>{% if contato.data %}{{ contato.data|date('d/m/Y') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="admin_botoes">
+        <li>
+            <a href="{{ path('admin_contato_index') }}" class="btn btn-default">Voltar</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <!-- Core CSS -->
+        <link href="{{ asset('assets/css/bootstrap.min.css') }}" media="screen" rel="stylesheet" type="text/css">
+
+        <link href="{{ asset('assets/css/admin.css') }}" media="screen" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Favale</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                        <li><a href="{{ path('professor_index') }}">Professores</a></li>
+                        <li><a href="{{ path('autor_index') }}">Autores</a></li>
+                        <li><a href="{{ path('admin_parceiro_index') }}">Parceiros</a></li>
+                        <li><a href="{{ path('bannerprincipal_index') }}">Banner</a></li>
+                        <li><a href="{{ path('post_index') }}">Blog</a></li>
+                        <li><a href="{{ path('admin_newsletter_index') }}">Newsletter</a></li>
+                        <li><a href="{{ path('admin_contato_index') }}">Contato</a></li>
+                        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <li><a href="{{ path("logout") }}">Logout</a></li>
+                        {% endif %}
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <main class="container" id="admin">
+        {% block body %}{% endblock %}
+        </main>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

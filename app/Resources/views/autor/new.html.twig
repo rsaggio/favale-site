@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cadastro de autores</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Cadastrar" class="btn btn-primary" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('autor_index') }}" style="margin-top:20px" class="btn btn-default">Voltar</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends 'AppBundle:Site:base.html.twig' %}
+
+{% block body %}
+        <!-- Middle -->
+        <section class="main-row">
+            <div class="container">
+                <div class="row">
+                    <!-- Content -->
+                    <div id="primary" class="col-sm-8 content-area">
+
+                        <!-- Post Details -->
+                        <article class="post post-details">
+                            <div class="entry-meta">
+                                <time class="entry-date" datetime="2014-03-19T20:22:19">{{ post.data|date('d/m/Y')}}</time>
+                                <span class="author"> Por <a href="#">{{ post.autor.nome }}</a></span>
+                                <span class="cat-links"> Em <a href="#" title="" rel="category tag">{{ post.categoria }}</a></span>
+                            </div>
+                            <div class="entry-meta">
+                                <h1 class="entry-title">{{ post.titulo }} </h1>
+                            </div>
+                            <div class="entry-content clearfix">
+                                <div class="entry-image">
+                                    <a href="#" title="{{ post.titulo }}">
+                                        <img src="/uploads/{{ post.imagem }}" alt="{{ post.titulo }}">
+                                    </a>
+                                </div>
+                                <p>{{ post.texto }}</p>
+                            </div>
+                        </article>
+                        <!--/ Post Details -->
+
+                        <!-- About Author -->
+                        <section class="author-description clearfix">
+                            <div class="author-image"><img src="/uploads/{{ post.autor.foto }}" alt=""></div>
+                            <div class="author-text">
+                                <h5 class="author-name">Post por: <span>{{ post.autor.nome }}</span></h5>
+                                <p>{{ post.autor.descricao }}</p>
+                            </div>
+                        </section>
+                        <!--/ About Author -->
+
+                    </div>
+                    <!--/ Content -->
+
+                    <!-- SideBar -->
+                    <div id="secondary" class="col-sm-4 sidebar widget-area">
+                        <div class="inner">
+                            <!-- Widget Search -->
+                            <div class="widget widget-search">
+                                <h3 class="widget-title">Procurar no blog</h3>
+                                <form id="searchform" method="get" action="{{ path('buscaPost') }}">
+                                    <div class="field-text buttoned">
+                                        <input type="text" placeholder="Digite uma busca" name="search" value="">
+                                        <button type="submit"><i class="tficon-arrow-right"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ Widget Search -->
+
+                            <!-- Widget Fresh Post -->
+                            <div class="widget widget-freshpost">
+                                <h3 class="widget-title">Últimos Posts</h3>
+                                <ul class="side-postlist">
+                                    {% for current in posts %}
+                                        <li><a href="{{ path('detalhePost', {'slug': current.slug}) }}"><span>{{ current.titulo }}</span></a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <!--/ Widget Fresh Post -->
+
+                            <!-- Widget Newsletter -->
+                            <div class="widget widget-newsletter">
+                                <h3 class="widget-title">Novidades</h3>
+                                <div class="widget-content">
+                                    <p>Quer receber as ultimas novidades?</p>
+                                </div>
+                                <form method="post" action="{{ path('newsletter') }}">
+                                    <div class="field-text buttoned">
+                                        <input type="email" value="" name="email" placeholder="Digite o seu email">
+                                        <button type="submit" title="Subscribe"><i class="tficon-arrow-right"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--/ Widget Newsletter -->
+                        </div>
+                    </div>
+                    <!--/ SideBar -->
+
+                </div>
+            </div>
+        </section>
+        <!--/ Middle -->
+{% endblock %}

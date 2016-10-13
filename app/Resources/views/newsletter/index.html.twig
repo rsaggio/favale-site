@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Newsletters</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Datacadastro</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for newsletter in newsletters %}
+            <tr>
+                <td><a href="{{ path('admin_newsletter_show', { 'id': newsletter.id }) }}">{{ newsletter.id }}</a></td>
+                <td>{{ newsletter.email }}</td>
+                <td>{% if newsletter.dataCadastro %}{{ newsletter.dataCadastro|date('d/m/Y') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_newsletter_show', { 'id': newsletter.id }) }}">Ver</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

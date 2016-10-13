@@ -1,0 +1,32 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+     foto_directory: '%kernel.root_dir%\..\web\uploads'
+
+services:
+    file_uploader:
+      class: AppBundle\Services\UploadService
+      arguments: ['%foto_directory%']
+
+    professor_controller:
+      class: AppBundle\Controller\ProfessorController
+      arguments: ["@service_container","@file_uploader"]
+    banner_controller:
+      class: AppBundle\Controller\BannerPrincipalController
+      arguments: ["@service_container","@file_uploader"]
+    parceiro_controller:
+      class: AppBundle\Controller\ParceiroController
+      arguments: ["@service_container","@file_uploader"]
+    autor_controller:
+      class: AppBundle\Controller\AutorController
+      arguments: ["@service_container","@file_uploader"]
+    post_controller:
+      class: AppBundle\Controller\PostController
+      arguments: ["@service_container","@file_uploader"]
+
+
+
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Autores</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Descricao</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for autor in autors %}
+            <tr>
+                <td><a href="{{ path('autor_show', { 'id': autor.id }) }}">{{ autor.id }}</a></td>
+                <td>{{ autor.nome }}</td>
+                <td>{{ autor.descricao }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('autor_show', { 'id': autor.id }) }}">Ver</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('autor_edit', { 'id': autor.id }) }}">Editar</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('autor_new') }}" class="btn btn-primary">Cadastrar</a>
+        </li>
+    </ul>
+{% endblock %}

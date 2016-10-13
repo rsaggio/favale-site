@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Banners</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Frase</th>
+                <th>Descricao</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for bannerPrincipal in bannerPrincipals %}
+            <tr>
+                <td><a href="{{ path('bannerprincipal_show', { 'id': bannerPrincipal.id }) }}">{{ bannerPrincipal.id }}</a></td>
+                <td>{{ bannerPrincipal.frase }}</td>
+                <td>{{ bannerPrincipal.descricao }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('bannerprincipal_show', { 'id': bannerPrincipal.id }) }}">Ver</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('bannerprincipal_edit', { 'id': bannerPrincipal.id }) }}">Editar</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('bannerprincipal_new') }}" class="btn btn-primary">Cadastrar</a>
+        </li>
+    </ul>
+{% endblock %}

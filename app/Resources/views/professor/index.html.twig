@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Professores</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Cref</th>
+                <th>Descricao</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for professor in professors %}
+            <tr>
+                <td><a href="{{ path('professor_show', { 'id': professor.id }) }}">{{ professor.id }}</a></td>
+                <td>{{ professor.nome }}</td>
+                <td>{{ professor.cref }}</td>
+                <td>{{ professor.descricao }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('professor_show', { 'id': professor.id }) }}">Ver</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('professor_edit', { 'id': professor.id }) }}">Editar</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('professor_new') }}" class="btn btn-primary">Cadastrar</a>
+
+{% endblock %}

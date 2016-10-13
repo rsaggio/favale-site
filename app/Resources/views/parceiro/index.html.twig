@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Parceiros</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Descricao</th>
+                <th>Link</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for parceiro in parceiros %}
+            <tr>
+                <td><a href="{{ path('admin_parceiro_show', { 'id': parceiro.id }) }}">{{ parceiro.id }}</a></td>
+                <td>{{ parceiro.nome }}</td>
+                <td>{{ parceiro.descricao }}</td>
+                <td>{{ parceiro.link }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_parceiro_show', { 'id': parceiro.id }) }}">Ver</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('admin_parceiro_edit', { 'id': parceiro.id }) }}">Editar</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('admin_parceiro_new') }}" class="btn btn-primary">Cadastrar</a>
+        </li>
+    </ul>
+{% endblock %}

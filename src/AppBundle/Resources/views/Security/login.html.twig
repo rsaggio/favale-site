@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	 <link href="{{ asset('assets/css/bootstrap.min.css') }}" media="screen" rel="stylesheet" type="text/css">
+	 <link href="{{ asset('assets/css/login.css') }}" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div class="container">
+		{% if error %}
+    		<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+		{% endif %}
+
+      <form class="form-signin" action="{{ path('login') }}" method="post">
+        <h2 class="form-signin-heading">Login</h2>
+        <label for="inputEmail" class="sr-only">Usuário</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus name="_username" value="{{ last_username }}">
+        <label for="inputPassword" class="sr-only">Senha</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="_password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+    </form>
+
+    </div> <!-- /container -->
+
+</body>
+</html>
+

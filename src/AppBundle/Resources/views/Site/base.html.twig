@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html lang="en" class="no-js oldie"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page | Favale - Físico e Saúde</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Core CSS -->
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" media="screen" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/style.css') }}" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+
+    <!-- Custom CSS -->
+    <link href="{{ asset('assets/custom.css') }}" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Modernizr Library -->
+    <script src="{{ asset('assets/js/libs/modernizr.min.js') }}"></script>
+</head>
+
+<body>
+
+<div id="page" class="hfeed site">
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+
+        <!-- Menu Button -->
+        <span id="menu-call" class="tficon-menu invisible"></span>
+        <!--/ Menu Button -->
+
+        <!-- Logo & Menu -->
+        <div class="header invisible">
+            <div class="container">
+                <div class="row header-desktop">
+                    <div class="col-md-12">
+                        <div class="site-logo"><a href="{{ path('homeSite') }}"><img src="/images/temp/logo.png" alt=""></a></div>
+
+                        <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+                            <ul class="nav-menu clearfix">
+                                <li class="active"><a href="{{ path('homeSite') }}"><span>Home</span></a></li>
+                                <li><a href="{{ path('homeSite') }}#equipe"><span>Equipe</span></a></li>
+                                <li><a href="{{ path('parceiros') }}"><span>Parceiros</span></a></li>
+                                <li><a href="{{ path('homeBlog') }}"><span>Blog</span></a></li>
+                                <li><a href="{{ path('formContato') }}"><span>Contato</span></a></li>
+                                <li>
+                                    <a href="#"><span>Área do aluno</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ Logo & Menu -->
+    </header>
+    <!--/ Header -->
+
+    <!-- Main -->
+    <div id="main" class="site-main" role="main">
+        {% block body %}{% endblock %}
+    </div>
+    <!--/ Main -->
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <ul class="footer-social">
+            <li><a class="link-facebook" href="http://www.facebook.com/themefuse?v=app_4949752878" target="_blank"></a></li>
+            <li><a class="link-twitter" href="http://twitter.com/#!/themefuse" target="_blank"></a></li>
+            <li><a class="link-google" href="#" target="_blank"></a></li>
+        </ul>
+
+        <div class="copyright">&copy; 2016 Favale - Desenvolvidor por <a href="http://designruca.com.br">Ruca</a><br>Todos os direitos reservados.
+    </footer>
+    <!-- Site Footer -->
+
+</div>
+<!-- #page -->
+
+<!-- JS Placed at the end of the document for faster page loading -->
+
+<!-- Libs -->
+<script src="{{ asset('assets/js/libs/jquery-1.11.0.min.js') }}"></script>
+<script src="{{ asset('assets/js/libs/jquery-ui-1.10.4.min.js') }}"></script>
+<script src="{{ asset('assets/js/libs/bootstrap.min.js') }}"></script>
+<!--[if lt IE 9]><script src="js/libs/respond.min.js"></script><![endif]-->
+
+<!-- Responsive Menu, Animated Dropdown -->
+<script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
+
+<!-- CarouFredSel -->
+<script src="{{ asset('assets/js/jquery.carouFredSel-6.2.1-packed.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.touchSwipe.min.js') }}"></script>
+
+<!-- Placeholders -->
+<script src="{{ asset('assets/js/jquery.powerful-placeholder.min.js') }}"></script>
+
+<!-- Styled Select -->
+<script src="{{ asset('assets/js/cusel.min.js') }}"></script>
+
+<!-- Attach Testimage to Header -->
+<script>
+    jQuery(function($) {
+        $('.main-slider, .page-header').prepend('<img src="/images/temp/slide-1.jpg" alt="" id="testimage" class="hidden">');
+    });
+</script>
+
+<!-- General Scripts -->
+<script src="{{ asset('assets/js/general.js') }}"></script>
+<!-- prettyPhoto -->
+<script src="{{ asset('assets/js/jquery.prettyPhoto.js') }}"></script>
+
+</body>
+</html>

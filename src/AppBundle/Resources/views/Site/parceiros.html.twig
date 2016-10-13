@@ -1,0 +1,73 @@
+{% extends 'AppBundle:Site:base.html.twig' %}
+
+
+{% block body %}
+        <!-- Page Titles & Slider or image -->
+        <section class="main-row main-row-slim">
+            <div class="main-header">
+                <!-- Loading Spinner -->
+                <div id="spinner" class="spinner">
+                    <div class="wBall" id="wBall_1">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_2">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_3">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_4">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_5">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                </div>
+                <!--/ Loading Spinner -->
+
+                <!-- Page Header -->
+                <div class="page-header invisible" style="background-image: url(images/temp/banner6.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-title-before invisible" data-animate-in="fadeInLeft">Nossos parceiros</div>
+                                <h1 class="page-title invisible" data-animate-in="fadeInLeft">Conheça quem nos ajuda nessa jornada</h1>
+                                <div class="page-desc invisible" data-animate-in="fadeInRight">Para oferecer sempre um serviço de qualidade a favale mantem parcerias de qualidade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Page Header -->
+            </div>
+        </section>
+        <!--/ Page Titles & Slider or image -->
+
+        <!-- PostList -->
+        <section class="main-row">
+            <div id="postlist-services" class="postlist-services">
+                <div class="container">
+                    <div class="row">
+                        {% for parceiro in parceiros %}
+                             <div class="col-sm-4">
+                            <!-- Post -->
+                                <article class="post">
+                                    <a href="{{ parceiro.link }}" class="post-thumbnail"><span>{{ parceiro.nome }}</span><img src="uploads/{{ parceiro.imagem }}" alt="{{ parceiro.nome }}"></a>
+                                    <div class="entry-content">
+                                        <div class="entry-title-before">{{ parceiro.nome }}</div>
+                                        <h3 class="entry-title"><a href="blog-details.html">{{parceiro.descricao}}</a></h3>
+                                    </div>
+                                </article>
+                                <!--/ Post -->
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ PostList -->
+{% endblock %}

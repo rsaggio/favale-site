@@ -1,0 +1,108 @@
+{% extends 'AppBundle:Site:base.html.twig' %}
+
+{% block body %}
+        <!-- Page Titles & Slider or image -->
+        <section class="main-row main-row-slim">
+            <div class="main-header main-header-gray main-header-map">
+                <!-- Loading Spinner -->
+                <div id="spinner" class="spinner">
+                    <div class="wBall" id="wBall_1">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_2">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_3">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_4">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                    <div class="wBall" id="wBall_5">
+                        <div class="wInnerBall">
+                        </div>
+                    </div>
+                </div>
+                <!--/ Loading Spinner -->
+
+                <!-- Google Map -->
+                <div id="map" class="map" style="background-image: url(images/temp/banner4.jpg);background-size:cover">
+                    
+                </div>
+                <!-- Google Map -->
+
+                <!-- Page Header -->
+                <div class="page-header invisible">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-title-before invisible" data-animate-in="fadeInLeft">Onde nos encontrar?</div>
+                                <h1 class="page-title invisible" data-animate-in="fadeInLeft">Nas principais academias</h1>
+                                <div class="page-desc invisible" data-animate-in="fadeInRight">
+                                    <strong>Academias:</strong>
+                                    <span>BioRitmo</span>
+                                    <span>BodyTech</span>
+                                    <span>Rebook</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ Page Header -->
+            </div>
+        </section>
+        <!--/ Page Titles & Slider or image -->
+
+        <!-- Contact -->
+        <section class="main-row">
+            <div class="container">
+                <div class="row">
+                    <!-- Content -->
+                    <div id="primary" class="col-sm-8 content-area">
+                        <!-- Contact Form -->
+                        {% for flash_message in app.session.flashBag.get('notice') %}
+                            <div class="flash-notice" style="font-size:24px;margin:0 20px 50px;color:black;">
+                                {{ flash_message }}
+                            </div>
+                        {% endfor %}
+                        {{ form_start(form, { 'attr': {'class': 'contact-form form-dark', 'id' : 'contact-form'} }) }}
+                            <div class="field-text pull-left">
+                                <label for="name" class="label-title">Nome e sobrenome</label>
+                                {{ form_widget(form.nome, { 'attr': {'placeholder': 'Nome e Sobrenome'} }) }}
+                                
+                            </div>
+                            <div class="field-text pull-right">
+                                <label for="email" class="label-title">Email:</label>
+                                {{ form_widget(form.email, { 'attr': {'placeholder': 'seuemail@email.com'} }) }}
+                               
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="field-text">
+                                <label for="message" class="label-title">Mensagem:</label>
+                                {{ form_widget(form.mensagem, { 'attr': {'placeholder': 'Digite aqui sua mensagem'} }) }}
+                                
+                            </div>
+                            <span class="btn btn-padding-big"><input type="submit" value="Enviar Mensagem"></span>
+                        {{ form_end(form) }}
+                        <!--/ Contact Form -->
+                    </div>
+                    <!--/ Content -->
+
+                    <!-- SideBar -->
+                    <div id="secondary" class="col-sm-4 sidebar widget-area">
+                        <div class="contact-address">
+                            <h6 class="title">Telefones</h6>
+                            <p>(11) 95428-1515</p>
+                            <p>(11) 1234-5678</p>
+                        </div>
+                    </div>
+                    <!--/ SideBar -->
+                </div>
+            </div>
+        </section>
+        <!--/ Contact -->
+   {% endblock %}

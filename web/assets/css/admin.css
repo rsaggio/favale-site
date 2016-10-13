@@ -1,0 +1,13 @@
+#admin ul {
+	list-style:none;
+	padding:0;
+}
+.admin_botoes {
+	margin-top:30px;
+}
+.admin_botoes li {
+	display:inline-block;
+}
+#post_texto {
+	height:200px;
+}
