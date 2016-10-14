@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class SecurityController extends Controller
 {
     /**
-     * @Route("/admin/login", name="login")
+     * @Route("/admin", name="login")
      */
     public function loginAction()
     {
@@ -30,7 +30,7 @@ class SecurityController extends Controller
      * @Route("/admin/logout", name="logout")
      */
     public function logoutAction() {
-    	// only do the logout
+    	
     }
 
 }

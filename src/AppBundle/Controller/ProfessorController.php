@@ -13,7 +13,7 @@ use AppBundle\Services\UploadService;
 /**
  * Professor controller.
  *
- * @Route("/admin", service="professor_controller")
+ * @Route("/admin/professor", service="professor_controller")
  */
 class ProfessorController extends Controller
 {
