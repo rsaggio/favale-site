@@ -8,9 +8,6 @@ class UploadService {
 
 	public function __construct($targetDir) {
 		$this->targetDir = $targetDir;
-		var_dump(file_exists($targetDir));
-		var_dump(is_writable($targetDir));
-		exit;
 	}
 
 	public function upload(UploadedFile $file) {
