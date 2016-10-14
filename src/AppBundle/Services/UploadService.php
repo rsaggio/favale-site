@@ -8,7 +8,7 @@ class UploadService {
 
 	public function __construct($targetDir) {
 		$this->targetDir = $targetDir;
-		var_dump($targetDir);
+		var_dump(is_writable($targetDir));
 		exit;
 	}
 
