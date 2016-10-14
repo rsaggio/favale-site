@@ -8,6 +8,8 @@ class UploadService {
 
 	public function __construct($targetDir) {
 		$this->targetDir = $targetDir;
+		var_dump($targetDir);
+		exit;
 	}
 
 	public function upload(UploadedFile $file) {
