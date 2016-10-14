@@ -21,8 +21,6 @@ security:
             security: false
 
         main:
-            pattern: ^/(_(profiler|wdt)|css|images|js)/
-            security: false
             anonymous: ~
             form_login: 
                 login_path: /admin
