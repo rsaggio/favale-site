@@ -25,6 +25,9 @@ security:
             form_login: 
                 login_path: /admin
                 check_path: /admin
+                default_target_path: /admin/professor
+                always_use_default_target_path: true
+                failure_path: /blog
             logout:
                 path:   /admin/logout
                 target: /
