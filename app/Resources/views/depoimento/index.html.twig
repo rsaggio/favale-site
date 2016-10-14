@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Depoimentos</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Subtitulo</th>
+                <th>Texto</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for depoimento in depoimentos %}
+            <tr>
+                <td><a href="{{ path('admin_depoimento_show', { 'id': depoimento.id }) }}">{{ depoimento.id }}</a></td>
+                <td>{{ depoimento.titulo }}</td>
+                <td>{{ depoimento.subtitulo }}</td>
+                <td>{{ depoimento.texto }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('admin_depoimento_show', { 'id': depoimento.id }) }}">Ver</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('admin_depoimento_edit', { 'id': depoimento.id }) }}">Editar</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul class="admin_botoes">
+        <li>
+            <a href="{{ path('admin_depoimento_new') }}" class="btn btn-primary">Cadastrar</a>
+        </li>
+    </ul>
+{% endblock %}

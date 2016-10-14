@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cadastro de depoimento</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Cadastrar" class="btn btn-primary" />
+    {{ form_end(form) }}
+
+    <ul class="admin_botoes">
+        <li>
+            <a href="{{ path('admin_depoimento_index') }}" class="btn btn-default">Voltar</a>
+        </li>
+    </ul>
+{% endblock %}

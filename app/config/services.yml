@@ -24,6 +24,9 @@ services:
     post_controller:
       class: AppBundle\Controller\PostController
       arguments: ["@service_container","@file_uploader"]
+    depoimento_controller:
+      class: AppBundle\Controller\DepoimentoController
+      arguments: ["@service_container","@file_uploader"]
 
 
 

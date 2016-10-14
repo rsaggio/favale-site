@@ -19,10 +19,12 @@ class SiteController extends Controller
         $em = $this->getDoctrine()->getManager();
         $professors = $em->getRepository('AppBundle:Professor')->findAll();
         $banners = $em->getRepository('AppBundle:BannerPrincipal')->findAll();
+        $depoimentos = $em->getRepository('AppBundle:Depoimento')->findAll();
 
         return $this->render('AppBundle:Site:home.html.twig', array(
             "professors" => $professors,
-            "banners" => $banners
+            "banners" => $banners,
+            "depoimentos" => $depoimentos
         ));
     }
 

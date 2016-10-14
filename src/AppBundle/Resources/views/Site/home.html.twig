@@ -121,45 +121,31 @@
         <section class="main-row main-row-gray main-row-slim">
             <div id="post-slider" class="postlist-stories post-slider carousel slide fade-effect">
                 <div class="carousel-inner">
-                    <!-- Post -->
-                    <article class="active item post clearfix">
-                        <span class="post-thumbnail"><img src="images/temp/depoimento1.jpg" alt=""></span>
-                        <div class="entry-content">
-                            <div class="entry-title-before" data-animate-in="fadeInDown" data-animate-out="fadeOutUp">Casos de sucesso</div>
-                            <h2 class="entry-title" data-animate-in="fadeInLeft" data-animate-out="fadeOutRight"><a href="#">Jessica Jones<br><span>Dor na Coluna Sumiu</span></a></h2>
-                            <p data-animate-in="fadeInLeft" data-animate-out="fadeOutRight">"Depois de anos indo no fisioterapeuta com apenas 3 meses em treinamento com o professor Wagner Favale não sinto mais dores na lombar e consigo fazer as minhas tarefas do dia a dia como uma pessoa normal".</p>
-                        </div>
-                    </article>
-                    <!--/ Post -->
-
-                    <!-- Post -->
-                    <article class="item post clearfix">
-                        <span class="post-thumbnail"><img src="images/temp/depoimento2.jpg" alt=""></span>
-                        <div class="entry-content">
-                            <div class="entry-title-before" data-animate-in="fadeInDown" data-animate-out="fadeOutUp">Casos de sucesso</div>
-                            <h2 class="entry-title" data-animate-in="fadeInLeft" data-animate-out="fadeOutRight"><a href="#">Jefferson Silva<br><span>minha disposição melhorou</span></a></h2>
-                            <p data-animate-in="fadeInLeft" data-animate-out="fadeOutRight">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."</p>
-                        </div>
-                    </article>
-                    <!--/ Post -->
-
-                    <!-- Post -->
-                    <article class="item post clearfix">
-                        <span class="post-thumbnail"><img src="images/temp/depoimento3.jpg" alt=""></span>
-                        <div class="entry-content">
-                            <div class="entry-title-before" data-animate-in="fadeInDown" data-animate-out="fadeOutUp">Casos de sucesso</div>
-                            <h2 class="entry-title" data-animate-in="fadeInLeft" data-animate-out="fadeOutRight"><a href="#">Casal Silva<br><span>Nos sentimos até mais novos!</span></a></h2>
-                            <p data-animate-in="fadeInLeft" data-animate-out="fadeOutRight">"In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus tos himenaeos. Sed molestie augue sit amet leo consequat".</p>
-                        </div>
-                    </article>
-                    <!--/ Post -->
+                    {% for depoimento in depoimentos %}
+                        {% if loop.first %}
+                            <article class="active item post clearfix">
+                        {% else %}
+                            <article class="item post clearfix">
+                        {% endif %}
+                            <span class="post-thumbnail"><img src="/uploads/{{ depoimento.foto }}" alt="{{ depoimento.titulo }}"></span>
+                            <div class="entry-content">
+                                <div class="entry-title-before" data-animate-in="fadeInDown" data-animate-out="fadeOutUp">Casos de sucesso</div>
+                                <h2 class="entry-title" data-animate-in="fadeInLeft" data-animate-out="fadeOutRight"><a href="#">{{ depoimento.titulo }}<br><span>{{ depoimento.subtitulo }}</span></a></h2>
+                                <p data-animate-in="fadeInLeft" data-animate-out="fadeOutRight">{{ depoimento.texto }}</p>
+                            </div>
+                        </article>
+                    {% endfor %}
                 </div>
 
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators" data-animate-in="fadeInUp" data-animate-out="fadeOutDown">
-                    <li data-target="#post-slider" data-slide-to="0" class="active"></li>
-                    <li data-target="#post-slider" data-slide-to="1"></li>
-                    <li data-target="#post-slider" data-slide-to="2"></li>
+                    {% for i in range(0, depoimentos|length -1) %}
+                        {% if loop.first %}
+                         <li data-target="#post-slider" data-slide-to="{{ i }}" class="active"></li>
+                        {% else %}
+                         <li data-target="#post-slider" data-slide-to="{{ i }}"></li>
+                        {% endif %}
+                    {% endfor %}
                 </ol>
                 <!-- Carousel nav -->
                 <a class="carousel-control left" href="#post-slider" data-slide="prev">&lsaquo;</a>

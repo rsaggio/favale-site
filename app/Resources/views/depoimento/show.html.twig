@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Depoimento</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ depoimento.id }}</td>
+            </tr>
+            <tr>
+                <th>Titulo</th>
+                <td>{{ depoimento.titulo }}</td>
+            </tr>
+            <tr>
+                <th>Subtitulo</th>
+                <td>{{ depoimento.subtitulo }}</td>
+            </tr>
+            <tr>
+                <th>Texto</th>
+                <td>{{ depoimento.texto }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="admin_botoes">
+        <li>
+            <a href="{{ path('admin_depoimento_index') }}" class="btn btn-default">Voltar</a>
+        </li>
+        <li>
+            <a class="btn btn-default" href="{{ path('admin_depoimento_edit', { 'id': depoimento.id }) }}">Editar</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Deletar" class="btn btn-danger">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
