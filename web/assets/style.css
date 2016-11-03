@@ -4625,6 +4625,7 @@ button {
   text-align: center;
   padding: 0 50px;
   margin-bottom: 40px;
+  min-height: 600px;
 }
 .postlist-3wide .post .links li {
   font-size: 13px;
