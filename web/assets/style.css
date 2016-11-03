@@ -399,17 +399,17 @@ body {
   display: none;
 }
 ::-moz-selection {
-  background: #00c8d6;
+  background: #fda300;
   color: #ffffff;
   text-shadow: none;
 }
 ::selection {
-  background: #00c8d6;
+  background: #fda300;
   color: #ffffff;
   text-shadow: none;
 }
 a {
-  color: #00c8d6;
+  color: #fda300;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
@@ -933,7 +933,7 @@ h3 span,
 h4 span,
 h5 span,
 h6 span {
-  color: #00c8d6;
+  color: #fda300;
 }
 h1 a,
 h2 a,
@@ -949,7 +949,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #00c8d6;
+  color: #fda300;
 }
 em {
   font-style: italic;
@@ -1110,7 +1110,7 @@ blockquote:after {
   color: #fff;
 }
 .highlight-primary {
-  background: #00c8d6;
+  background: #fda300;
 }
 .highlight-info {
   background: #46b8da;
@@ -1233,7 +1233,7 @@ address {
 .entry-format:before {
   font-family: 'FontAwesome';
   content: "";
-  color: #00c8d6;
+  color: #fda300;
   margin-right: 5px;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
@@ -2195,7 +2195,7 @@ address {
   color: #291c1c;
 }
 .site-footer .nav-menu li a:hover {
-  color: #00c8d6 !important;
+  color: #fda300 !important;
 }
 .site-footer .nav-menu ul {
   display: none !important;
@@ -2274,9 +2274,9 @@ address {
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
-  border: 2px solid #00c8d6;
+  border: 2px solid #fda300;
   border-radius: 0;
-  background-color: #00c8d6;
+  background-color: #fda300;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2316,7 +2316,7 @@ address {
 }
 .btn.btn-transparent span,
 .btn.btn-transparent input {
-  color: #00c8d6;
+  color: #fda300;
   background-color: transparent;
 }
 .btn.btn-full {
@@ -2335,7 +2335,7 @@ address {
 .btn.active span,
 .btn.active input {
   background-color: transparent;
-  color: #00c8d6;
+  color: #fda300;
 }
 .btn.btn-transparent:hover span,
 .btn.btn-transparent:hover input,
@@ -2345,7 +2345,7 @@ address {
 .btn.btn-transparent.hover input,
 .btn.btn-transparent.active span,
 .btn.btn-transparent.active input {
-  background-color: #00c8d6;
+  background-color: #fda300;
   color: #ffffff;
 }
 .btn.btn-black span,
@@ -2621,7 +2621,7 @@ address {
 #cuselBox span:hover label,
 #cuselBox span.cuselOptHover label,
 #cuselBox span.cuselActive label {
-  color: #00c8d6;
+  color: #fda300;
 }
 /*Optgroup*/
 #cuselBox span.optgroup {
@@ -2632,7 +2632,7 @@ address {
   padding: 11px 0;
   font-size: 14px;
   font-weight: 700;
-  color: #00c8d6;
+  color: #fda300;
 }
 /*Disabled Option*/
 #cuselBox span.disabled {
@@ -2993,7 +2993,7 @@ button {
   width: 9px;
   height: 9px;
   margin: 4px;
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 .custom-radio label:before,
 .custom-radio label.checked:after {
@@ -3072,7 +3072,7 @@ button {
   width: 47px;
   height: 47px;
   font-size: 15px;
-  color: #00c8d6;
+  color: #fda300;
 }
 /* Comment Form */
 /*-----------------------------------*/
@@ -3158,13 +3158,13 @@ button {
 .comment-form input[type="reset"] {
   position: relative;
   height: 44px;
-  border: 2px solid #00c8d6;
+  border: 2px solid #fda300;
   padding: 0 36px;
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #00c8d6;
+  background-color: #fda300;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3174,7 +3174,7 @@ button {
 .comment-form input[type="submit"]:hover,
 .comment-form input[type="reset"]:hover {
   background-color: transparent;
-  color: #00c8d6;
+  color: #fda300;
 }
 .comment-form input[type="submit"]:active,
 .comment-form input[type="reset"]:active {
@@ -3246,9 +3246,9 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
-  border: 2px solid #00c8d6;
+  border: 2px solid #fda300;
   border-radius: 0;
-  background-color: #00c8d6;
+  background-color: #fda300;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3258,7 +3258,7 @@ button {
 }
 .post-password-form input[type="submit"]:hover {
   background-color: transparent;
-  color: #00c8d6;
+  color: #fda300;
 }
 @media (max-width: 479px) {
   .post-password-form label,
@@ -3588,7 +3588,7 @@ button {
   content: '';
   width: 24px;
   height: 24px;
-  border: 2px solid #00c8d6;
+  border: 2px solid #fda300;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -3611,7 +3611,7 @@ button {
 }
 .categories-slider .categories-item.active a:after,
 .categories-slider .categories-item a:hover:after {
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 .categories-slider .prev,
 .categories-slider .next {
@@ -3891,9 +3891,9 @@ button {
   outline: none;
   font-size: 14px;
   font-weight: 700;
-  color: #00c8d6;
+  color: #fda300;
   white-space: nowrap;
-  border: 2px solid #00c8d6;
+  border: 2px solid #fda300;
   border-radius: 0;
   background-color: transparent;
   -webkit-transition: all 0.3s;
@@ -3960,7 +3960,7 @@ button {
   box-shadow: inset 0 0 0 1px #bfcccf;
 }
 .progress-wrap .progress-bar {
-  background-color: #00c8d6;
+  background-color: #fda300;
   -webkit-box-shadow: inset 0 0 0 1px #0098a3;
   -moz-box-shadow: inset 0 0 0 1px #0098a3;
   box-shadow: inset 0 0 0 1px #0098a3;
@@ -4359,12 +4359,12 @@ button {
 .tabs_framed .nav-tabs li a {
   color: #ffffff;
   border-radius: 0;
-  background-color: #00c8d6;
+  background-color: #fda300;
   padding: 8px 15px;
   font-size: 15px;
 }
 .tabs_framed .nav-tabs li a:hover {
-  border-color: #00c8d6;
+  border-color: #fda300;
 }
 .tabs_framed .nav-tabs li.active a {
   color: #d34d5e;
@@ -4383,7 +4383,7 @@ button {
 .tabs_framed .nav-justified li a {
   padding: 6px 15px 10px 15px;
   line-height: 1.2em;
-  border-bottom-color: #00c8d6;
+  border-bottom-color: #fda300;
   border-left-color: #ffffff;
 }
 .tabs_framed .nav-justified li a:hover {
@@ -4686,7 +4686,7 @@ button {
 }
 .postlist-stories .post .entry-title-before {
   font-size: 17px;
-  color: #00c8d6;
+  color: #fda300;
   text-transform: uppercase;
   margin-bottom: 2em;
 }
@@ -4708,7 +4708,7 @@ button {
   transition: color 0.2s ease;
 }
 .postlist-stories .post .entry-title a:hover span {
-  color: #00c8d6;
+  color: #fda300;
 }
 .postlist-stories .post .post-thumbnail {
   position: relative;
@@ -4908,7 +4908,7 @@ button {
 .postlist-services .post .entry-title-before {
   font-size: 13px;
   font-weight: 700;
-  color: #00c8d6;
+  color: #fda300;
   text-transform: uppercase;
   margin-bottom: 1em;
 }
@@ -4938,8 +4938,8 @@ button {
 .postlist-services .post .btn.hover input,
 .postlist-services .post .btn.active span,
 .postlist-services .post .btn.active input {
-  background-color: #00c8d6;
-  border-color: #00c8d6;
+  background-color: #fda300;
+  border-color: #fda300;
   color: #ffffff;
 }
 .postlist-services .row:last-child .post {
@@ -5161,7 +5161,7 @@ button {
   font-weight: 400;
 }
 .author-description .author-text .author-name span {
-  color: #00c8d6;
+  color: #fda300;
 }
 .author-description .author-text p {
   font-size: 13px;
@@ -5286,7 +5286,7 @@ button {
   color: #291c1c;
 }
 .postlist-sidebar .entry-title:hover {
-  color: #00c8d6;
+  color: #fda300;
 }
 .postlist-sidebar .entry-meta {
   font-size: 13px;
@@ -5381,7 +5381,7 @@ button {
   text-transform: uppercase;
 }
 .comment-list .comment-meta .comment-author a:hover {
-  color: #00c8d6;
+  color: #fda300;
 }
 .comment-list .comment-meta .comment-reply-link {
   float: right;
@@ -5446,7 +5446,7 @@ button {
 .pricelist .price-item .price-head span {
   font-size: 2.3em;
   font-weight: 700;
-  color: #00c8d6;
+  color: #fda300;
   vertical-align: middle;
 }
 .pricelist .price-item .price-head span {
@@ -5457,7 +5457,7 @@ button {
   padding: 40px;
 }
 .pricelist .price-item .price-content {
-  background-color: #00c8d6;
+  background-color: #fda300;
   padding: 44px 10px 38px;
   margin-bottom: 40px;
 }
@@ -5519,8 +5519,8 @@ button {
 }
 .pricelist .price-item.active .btn span,
 .pricelist .price-item.active .btn input {
-  color: #00c8d6;
-  border: 2px solid #00c8d6;
+  color: #fda300;
+  border: 2px solid #fda300;
   font-size: 14px;
   height: 56px;
   line-height: 52px;
@@ -5533,8 +5533,8 @@ button {
 .pricelist .price-item.active .btn.hover input,
 .pricelist .price-item.active .btn.active span,
 .pricelist .price-item.active .btn.active input {
-  background-color: #00c8d6;
-  border-color: #00c8d6;
+  background-color: #fda300;
+  border-color: #fda300;
   color: #ffffff;
 }
 @media (max-width: 1199px) {
@@ -5664,7 +5664,7 @@ button {
 .calendar-slider .calendar-item a .more span {
   display: none;
   font-size: 13px;
-  color: #00c8d6;
+  color: #fda300;
 }
 .calendar-slider .calendar-item a .exercises {
   height: 230px;
@@ -5793,7 +5793,7 @@ button {
   left: 50%;
   cursor: pointer;
   font-size: 30px;
-  color: #00c8d6;
+  color: #fda300;
 }
 #calendar .ui-datepicker-header .ui-datepicker-prev span,
 #calendar .ui-datepicker-header .ui-datepicker-next span {
@@ -5916,7 +5916,7 @@ button {
   color: #291c1c;
 }
 #calendar .ui-datepicker-calendar td.ui-datepicker-unselectable.event {
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 #calendar .ui-datepicker-calendar td.ui-datepicker-unselectable .ev_wrap span,
 #calendar .ui-datepicker-calendar td.ui-datepicker-unselectable .ev_wrap a {
@@ -6111,7 +6111,7 @@ button {
 .widget-freshpost .side-postlist li a:hover,
 .widget-most-comment .side-postlist li a:hover {
   color: #ffffff;
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 .widget-freshpost .side-postlist li a:hover strong,
 .widget-most-comment .side-postlist li a:hover strong {
@@ -6128,7 +6128,7 @@ button {
 .widget-freshpost .side-postlist li.current-menu-item a,
 .widget-most-comment .side-postlist li.current-menu-item a {
   color: #ffffff;
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .widget-freshpost .side-postlist li a,
@@ -6210,11 +6210,11 @@ button {
   top: 13px;
 }
 .tagcloud a:hover {
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 .tagcloud a:hover:before {
-  border-right-color: #00c8d6;
-  box-shadow: 2px 0 0 -1px #00c8d6;
+  border-right-color: #fda300;
+  box-shadow: 2px 0 0 -1px #fda300;
 }
 .content-area .tagcloud {
   border-top: 1px solid #ebeff0;
@@ -6259,7 +6259,7 @@ button {
   margin-right: 13px;
 }
 .widget-text .social-links a:hover {
-  color: #00c8d6;
+  color: #fda300;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .widget-text p {
@@ -6296,7 +6296,7 @@ button {
   color: #291c1c;
 }
 .widget-archives .archives li a:hover {
-  color: #00c8d6;
+  color: #fda300;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .widget-archives .archives li {
@@ -6331,7 +6331,7 @@ button {
   position: relative;
   top: 10px;
   margin: 0 8px 0 0;
-  color: #00c8d6;
+  color: #fda300;
   font-size: 16px;
 }
 .quote-text {
@@ -6406,7 +6406,7 @@ button {
   transition: border-color 0.3s ease;
 }
 .widget_flickr .flickr_badge_image a:hover img {
-  border-color: #00c8d6;
+  border-color: #fda300;
 }
 /*-----------------------------------*/
 /* Workouts */
@@ -6451,7 +6451,7 @@ button {
 .workout-item .workout-title-before {
   font-size: 13px;
   font-weight: 700;
-  color: #00c8d6;
+  color: #fda300;
   text-transform: uppercase;
   margin-bottom: .8em;
   height: 13px;
@@ -6789,7 +6789,7 @@ button {
 .postlist-exercises .post .entry-title-before {
   font-size: 13px;
   font-weight: 700;
-  color: #00c8d6;
+  color: #fda300;
   text-transform: uppercase;
   margin-bottom: 1.2em;
 }
@@ -7017,7 +7017,7 @@ button {
 }
 .paging-navigation .pagination .page_prev:hover,
 .paging-navigation .pagination .page_next:hover {
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 .paging-navigation .pagination .page-number {
   font-size: 17px;
@@ -7482,7 +7482,7 @@ button {
   transition: border-color 0.3s ease;
 }
 .minigallery_carousel li a:hover img {
-  border-color: #00c8d6;
+  border-color: #fda300;
 }
 .minigallery_carousel .prev,
 .minigallery_carousel .next {
@@ -7490,7 +7490,7 @@ button {
   top: 50px;
   left: 10px;
   font-size: 40px;
-  color: #00c8d6;
+  color: #fda300;
   line-height: 1em;
 }
 .minigallery_carousel .next {
@@ -7526,10 +7526,10 @@ button {
   color: #ffffff;
 }
 .panel.panel-default {
-  border-color: #00c8d6;
+  border-color: #fda300;
 }
 .panel.panel-default .panel-heading {
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 .panel.panel-danger {
   border-color: #e61c17;
@@ -7594,20 +7594,20 @@ button {
 /* Tooltips */
 /*-----------------------------------*/
 .tooltip.top .tooltip-arrow {
-  border-top-color: #00c8d6;
+  border-top-color: #fda300;
 }
 .tooltip.left .tooltip-arrow {
-  border-left-color: #00c8d6;
+  border-left-color: #fda300;
 }
 .tooltip.right .tooltip-arrow {
-  border-right-color: #00c8d6;
+  border-right-color: #fda300;
 }
 .tooltip.bottom .tooltip-arrow {
-  border-bottom-color: #00c8d6;
+  border-bottom-color: #fda300;
 }
 .tooltip-inner {
   color: #ffffff;
-  background-color: #00c8d6;
+  background-color: #fda300;
 }
 /* Tables */
 /*-----------------------------------*/
@@ -7652,7 +7652,7 @@ table tbody td {
 }
 /* Table Colors */
 thead th {
-  background-color: #00c8d6;
+  background-color: #fda300;
   color: #fff;
 }
 .table-striped thead th {
@@ -7680,7 +7680,7 @@ thead th {
   background-color: #e61c17;
 }
 table {
-  border: 1px solid #00c8d6;
+  border: 1px solid #fda300;
 }
 .table-striped .table {
   border-color: #14b096;
@@ -7708,7 +7708,7 @@ table {
 }
 @media (max-width: 767px) {
   .table-responsive {
-    border: 1px solid #00c8d6;
+    border: 1px solid #fda300;
   }
   .table-responsive.table-striped {
     border-color: #14b096;
