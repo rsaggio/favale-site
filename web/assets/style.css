@@ -391,7 +391,7 @@ body {
   background: none;
   filter: none;
   font-size: 21px;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   text-align: center;
   padding-top: 200px;
 }
@@ -399,17 +399,17 @@ body {
   display: none;
 }
 ::-moz-selection {
-  background: #fda300;
+  background: rgb(236,102,0);
   color: #ffffff;
   text-shadow: none;
 }
 ::selection {
-  background: #fda300;
+  background: rgb(236,102,0);
   color: #ffffff;
   text-shadow: none;
 }
 a {
-  color: #fda300;
+  color: rgb(236,102,0);
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
@@ -426,7 +426,7 @@ a:active {
   background-color: transparent;
 }
 a.link-red {
-  color: #d34d5e;
+  color: rgb(191,48,62);
 }
 a.link-red:hover,
 a.link-red:focus {
@@ -933,7 +933,7 @@ h3 span,
 h4 span,
 h5 span,
 h6 span {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 h1 a,
 h2 a,
@@ -949,7 +949,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 em {
   font-style: italic;
@@ -1072,7 +1072,7 @@ blockquote ol:last-child {
   padding: 0;
   line-height: 1.5em;
   border: none;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   font-weight: normal;
 }
 .frame_quote blockquote .inner {
@@ -1110,7 +1110,7 @@ blockquote:after {
   color: #fff;
 }
 .highlight-primary {
-  background: #fda300;
+  background: rgb(236,102,0);
 }
 .highlight-info {
   background: #46b8da;
@@ -1233,7 +1233,7 @@ address {
 .entry-format:before {
   font-family: 'FontAwesome';
   content: "";
-  color: #fda300;
+  color: rgb(236,102,0);
   margin-right: 5px;
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
@@ -1453,6 +1453,10 @@ address {
   background-color: #1a1212;
   text-align: center;
 }
+.header-parceiro {
+  height:250px !important;
+  min-height: 250px !important;
+}
 .main-slider .item,
 .page-header {
   background-position: center center;
@@ -1489,7 +1493,7 @@ address {
 .section-title-before {
   font-size: 16px;
   font-weight: 700;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   text-transform: uppercase;
   margin-bottom: 1em;
 }
@@ -2195,7 +2199,7 @@ address {
   color: #291c1c;
 }
 .site-footer .nav-menu li a:hover {
-  color: #fda300 !important;
+  color: rgb(236,102,0) !important;
 }
 .site-footer .nav-menu ul {
   display: none !important;
@@ -2274,9 +2278,9 @@ address {
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
-  border: 2px solid #fda300;
+  border: 2px solid rgb(236,102,0);
   border-radius: 0;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -2316,7 +2320,7 @@ address {
 }
 .btn.btn-transparent span,
 .btn.btn-transparent input {
-  color: #fda300;
+  color: rgb(236,102,0);
   background-color: transparent;
 }
 .btn.btn-full {
@@ -2335,7 +2339,7 @@ address {
 .btn.active span,
 .btn.active input {
   background-color: transparent;
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 .btn.btn-transparent:hover span,
 .btn.btn-transparent:hover input,
@@ -2345,7 +2349,7 @@ address {
 .btn.btn-transparent.hover input,
 .btn.btn-transparent.active span,
 .btn.btn-transparent.active input {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   color: #ffffff;
 }
 .btn.btn-black span,
@@ -2383,14 +2387,14 @@ address {
 }
 .btn.btn-red span,
 .btn.btn-red input {
-  background-color: #d34d5e;
-  border-color: #d34d5e;
+  background-color: rgb(191,48,62);
+  border-color: rgb(191,48,62);
   color: #ffffff;
 }
 .btn.btn-red.btn-transparent span,
 .btn.btn-red.btn-transparent input {
   background-color: transparent;
-  color: #d34d5e;
+  color: rgb(191,48,62);
 }
 .btn.btn-red:hover span,
 .btn.btn-red:hover input,
@@ -2401,7 +2405,7 @@ address {
 .btn.btn-red.active span,
 .btn.btn-red.active input {
   background-color: transparent;
-  color: #d34d5e;
+  color: rgb(191,48,62);
 }
 .btn.btn-red.btn-transparent:hover span,
 .btn.btn-red.btn-transparent:hover input,
@@ -2411,7 +2415,7 @@ address {
 .btn.btn-red.btn-transparent.hover input,
 .btn.btn-red.btn-transparent.active span,
 .btn.btn-red.btn-transparent.active input {
-  background-color: #d34d5e;
+  background-color: rgb(191,48,62);
   color: #ffffff;
 }
 .btn.btn-yellow span,
@@ -2621,7 +2625,7 @@ address {
 #cuselBox span:hover label,
 #cuselBox span.cuselOptHover label,
 #cuselBox span.cuselActive label {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 /*Optgroup*/
 #cuselBox span.optgroup {
@@ -2632,7 +2636,7 @@ address {
   padding: 11px 0;
   font-size: 14px;
   font-weight: 700;
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 /*Disabled Option*/
 #cuselBox span.disabled {
@@ -2852,7 +2856,7 @@ button {
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   text-transform: uppercase;
   cursor: default;
   margin-bottom: 8px;
@@ -2956,7 +2960,7 @@ button {
   display: inline-block;
   font-size: 13px;
   font-weight: 700;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   line-height: 17px;
   text-transform: uppercase;
   padding: 0 0 0 23px;
@@ -2993,7 +2997,7 @@ button {
   width: 9px;
   height: 9px;
   margin: 4px;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 .custom-radio label:before,
 .custom-radio label.checked:after {
@@ -3072,7 +3076,7 @@ button {
   width: 47px;
   height: 47px;
   font-size: 15px;
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 /* Comment Form */
 /*-----------------------------------*/
@@ -3158,13 +3162,13 @@ button {
 .comment-form input[type="reset"] {
   position: relative;
   height: 44px;
-  border: 2px solid #fda300;
+  border: 2px solid rgb(236,102,0);
   padding: 0 36px;
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3174,7 +3178,7 @@ button {
 .comment-form input[type="submit"]:hover,
 .comment-form input[type="reset"]:hover {
   background-color: transparent;
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 .comment-form input[type="submit"]:active,
 .comment-form input[type="reset"]:active {
@@ -3246,9 +3250,9 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   white-space: nowrap;
-  border: 2px solid #fda300;
+  border: 2px solid rgb(236,102,0);
   border-radius: 0;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -3258,7 +3262,7 @@ button {
 }
 .post-password-form input[type="submit"]:hover {
   background-color: transparent;
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 @media (max-width: 479px) {
   .post-password-form label,
@@ -3588,7 +3592,7 @@ button {
   content: '';
   width: 24px;
   height: 24px;
-  border: 2px solid #fda300;
+  border: 2px solid rgb(236,102,0);
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -3611,7 +3615,7 @@ button {
 }
 .categories-slider .categories-item.active a:after,
 .categories-slider .categories-item a:hover:after {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 .categories-slider .prev,
 .categories-slider .next {
@@ -3891,9 +3895,9 @@ button {
   outline: none;
   font-size: 14px;
   font-weight: 700;
-  color: #fda300;
+  color: rgb(236,102,0);
   white-space: nowrap;
-  border: 2px solid #fda300;
+  border: 2px solid rgb(236,102,0);
   border-radius: 0;
   background-color: transparent;
   -webkit-transition: all 0.3s;
@@ -3960,7 +3964,7 @@ button {
   box-shadow: inset 0 0 0 1px #bfcccf;
 }
 .progress-wrap .progress-bar {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   -webkit-box-shadow: inset 0 0 0 1px #0098a3;
   -moz-box-shadow: inset 0 0 0 1px #0098a3;
   box-shadow: inset 0 0 0 1px #0098a3;
@@ -3972,7 +3976,7 @@ button {
   box-shadow: inset 0 0 0 1px #e0b901;
 }
 .progress-wrap.level-high .progress-bar {
-  background-color: #d34d5e;
+  background-color: rgb(191,48,62);
   -webkit-box-shadow: inset 0 0 0 1px #be2f41;
   -moz-box-shadow: inset 0 0 0 1px #be2f41;
   box-shadow: inset 0 0 0 1px #be2f41;
@@ -4124,7 +4128,7 @@ button {
 .row-icons a:hover i {
   top: -3px;
   font-size: 22px;
-  color: #d34d5e;
+  color: rgb(191,48,62);
 }
 .row-icons a:hover i.tficon-chevron-up,
 .row-icons a:hover i.tficon-chevron-down {
@@ -4359,15 +4363,15 @@ button {
 .tabs_framed .nav-tabs li a {
   color: #ffffff;
   border-radius: 0;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   padding: 8px 15px;
   font-size: 15px;
 }
 .tabs_framed .nav-tabs li a:hover {
-  border-color: #fda300;
+  border-color: rgb(236,102,0);
 }
 .tabs_framed .nav-tabs li.active a {
-  color: #d34d5e;
+  color: rgb(191,48,62);
   background-color: #ffffff;
   padding: 10px 15px;
   border: 1px solid #ebeff0;
@@ -4383,7 +4387,7 @@ button {
 .tabs_framed .nav-justified li a {
   padding: 6px 15px 10px 15px;
   line-height: 1.2em;
-  border-bottom-color: #fda300;
+  border-bottom-color: rgb(236,102,0);
   border-left-color: #ffffff;
 }
 .tabs_framed .nav-justified li a:hover {
@@ -4483,8 +4487,8 @@ button {
   padding: 0 16px;
   font-size: 15px;
   font-weight: 700;
-  color: #d34d5e;
-  border: 2px solid #d34d5e;
+  color: rgb(191,48,62);
+  border: 2px solid rgb(191,48,62);
   background-color: #ffffff;
   position: relative;
   -webkit-transition: all 0.3s ease;
@@ -4498,7 +4502,7 @@ button {
   content: '';
   width: 0;
   height: 0;
-  border-top: 10px solid #d34d5e;
+  border-top: 10px solid rgb(191,48,62);
   border-right: 12px solid transparent;
   position: absolute;
   left: 14px;
@@ -4516,10 +4520,10 @@ button {
 }
 .post .comments-link:hover {
   color: #ffffff;
-  background-color: #d34d5e;
+  background-color: rgb(191,48,62);
 }
 .post .comments-link:hover:after {
-  border-top-color: #d34d5e;
+  border-top-color: rgb(191,48,62);
 }
 .post .entry-content embed,
 .post .entry-content iframe {
@@ -4686,7 +4690,7 @@ button {
 }
 .postlist-stories .post .entry-title-before {
   font-size: 17px;
-  color: #fda300;
+  color: rgb(236,102,0);
   text-transform: uppercase;
   margin-bottom: 2em;
 }
@@ -4708,7 +4712,7 @@ button {
   transition: color 0.2s ease;
 }
 .postlist-stories .post .entry-title a:hover span {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 .postlist-stories .post .post-thumbnail {
   position: relative;
@@ -4908,7 +4912,7 @@ button {
 .postlist-services .post .entry-title-before {
   font-size: 13px;
   font-weight: 700;
-  color: #fda300;
+  color: rgb(236,102,0);
   text-transform: uppercase;
   margin-bottom: 1em;
 }
@@ -4938,8 +4942,8 @@ button {
 .postlist-services .post .btn.hover input,
 .postlist-services .post .btn.active span,
 .postlist-services .post .btn.active input {
-  background-color: #fda300;
-  border-color: #fda300;
+  background-color: rgb(236,102,0);
+  border-color: rgb(236,102,0);
   color: #ffffff;
 }
 .postlist-services .row:last-child .post {
@@ -5161,7 +5165,7 @@ button {
   font-weight: 400;
 }
 .author-description .author-text .author-name span {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 .author-description .author-text p {
   font-size: 13px;
@@ -5286,7 +5290,7 @@ button {
   color: #291c1c;
 }
 .postlist-sidebar .entry-title:hover {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 .postlist-sidebar .entry-meta {
   font-size: 13px;
@@ -5381,7 +5385,7 @@ button {
   text-transform: uppercase;
 }
 .comment-list .comment-meta .comment-author a:hover {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 .comment-list .comment-meta .comment-reply-link {
   float: right;
@@ -5446,7 +5450,7 @@ button {
 .pricelist .price-item .price-head span {
   font-size: 2.3em;
   font-weight: 700;
-  color: #fda300;
+  color: rgb(236,102,0);
   vertical-align: middle;
 }
 .pricelist .price-item .price-head span {
@@ -5457,7 +5461,7 @@ button {
   padding: 40px;
 }
 .pricelist .price-item .price-content {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   padding: 44px 10px 38px;
   margin-bottom: 40px;
 }
@@ -5477,10 +5481,10 @@ button {
   line-height: 46px;
 }
 .pricelist .price-item.red .price-head strong {
-  color: #d34d5e;
+  color: rgb(191,48,62);
 }
 .pricelist .price-item.red .price-content {
-  background-color: #d34d5e;
+  background-color: rgb(191,48,62);
 }
 .pricelist .price-item.yellow .price-head strong {
   color: #e7c62d;
@@ -5519,8 +5523,8 @@ button {
 }
 .pricelist .price-item.active .btn span,
 .pricelist .price-item.active .btn input {
-  color: #fda300;
-  border: 2px solid #fda300;
+  color: rgb(236,102,0);
+  border: 2px solid rgb(236,102,0);
   font-size: 14px;
   height: 56px;
   line-height: 52px;
@@ -5533,8 +5537,8 @@ button {
 .pricelist .price-item.active .btn.hover input,
 .pricelist .price-item.active .btn.active span,
 .pricelist .price-item.active .btn.active input {
-  background-color: #fda300;
-  border-color: #fda300;
+  background-color: rgb(236,102,0);
+  border-color: rgb(236,102,0);
   color: #ffffff;
 }
 @media (max-width: 1199px) {
@@ -5664,7 +5668,7 @@ button {
 .calendar-slider .calendar-item a .more span {
   display: none;
   font-size: 13px;
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 .calendar-slider .calendar-item a .exercises {
   height: 230px;
@@ -5793,7 +5797,7 @@ button {
   left: 50%;
   cursor: pointer;
   font-size: 30px;
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 #calendar .ui-datepicker-header .ui-datepicker-prev span,
 #calendar .ui-datepicker-header .ui-datepicker-next span {
@@ -5916,14 +5920,14 @@ button {
   color: #291c1c;
 }
 #calendar .ui-datepicker-calendar td.ui-datepicker-unselectable.event {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 #calendar .ui-datepicker-calendar td.ui-datepicker-unselectable .ev_wrap span,
 #calendar .ui-datepicker-calendar td.ui-datepicker-unselectable .ev_wrap a {
   color: #291c1c;
 }
 #calendar .ui-datepicker-calendar td.ui-datepicker-unselectable:hover {
-  background-color: #d34d5e;
+  background-color: rgb(191,48,62);
   cursor: pointer;
   color: #ffffff;
 }
@@ -5950,7 +5954,7 @@ button {
   color: rgba(41, 28, 28, 0.26);
 }
 #calendar .ui-datepicker-calendar td.ui-datepicker-today {
-  background-color: #d34d5e !important;
+  background-color: rgb(191,48,62) !important;
 }
 #calendar .ui-datepicker-calendar td.ui-datepicker-today .ev_wrap {
   color: #ffffff;
@@ -6022,7 +6026,7 @@ button {
 .widget-title {
   font-size: 13px;
   font-weight: 400;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   text-transform: uppercase;
   margin-bottom: 2em;
 }
@@ -6111,7 +6115,7 @@ button {
 .widget-freshpost .side-postlist li a:hover,
 .widget-most-comment .side-postlist li a:hover {
   color: #ffffff;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 .widget-freshpost .side-postlist li a:hover strong,
 .widget-most-comment .side-postlist li a:hover strong {
@@ -6128,7 +6132,7 @@ button {
 .widget-freshpost .side-postlist li.current-menu-item a,
 .widget-most-comment .side-postlist li.current-menu-item a {
   color: #ffffff;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .widget-freshpost .side-postlist li a,
@@ -6210,11 +6214,11 @@ button {
   top: 13px;
 }
 .tagcloud a:hover {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 .tagcloud a:hover:before {
-  border-right-color: #fda300;
-  box-shadow: 2px 0 0 -1px #fda300;
+  border-right-color: rgb(236,102,0);
+  box-shadow: 2px 0 0 -1px rgb(236,102,0);
 }
 .content-area .tagcloud {
   border-top: 1px solid #ebeff0;
@@ -6259,7 +6263,7 @@ button {
   margin-right: 13px;
 }
 .widget-text .social-links a:hover {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .widget-text p {
@@ -6296,7 +6300,7 @@ button {
   color: #291c1c;
 }
 .widget-archives .archives li a:hover {
-  color: #fda300;
+  color: rgb(236,102,0);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .widget-archives .archives li {
@@ -6331,11 +6335,11 @@ button {
   position: relative;
   top: 10px;
   margin: 0 8px 0 0;
-  color: #fda300;
+  color: rgb(236,102,0);
   font-size: 16px;
 }
 .quote-text {
-  color: #d34d5e;
+  color: rgb(191,48,62);
   font-size: 15px;
   font-style: italic;
   font-weight: normal;
@@ -6406,7 +6410,7 @@ button {
   transition: border-color 0.3s ease;
 }
 .widget_flickr .flickr_badge_image a:hover img {
-  border-color: #fda300;
+  border-color: rgb(236,102,0);
 }
 /*-----------------------------------*/
 /* Workouts */
@@ -6451,7 +6455,7 @@ button {
 .workout-item .workout-title-before {
   font-size: 13px;
   font-weight: 700;
-  color: #fda300;
+  color: rgb(236,102,0);
   text-transform: uppercase;
   margin-bottom: .8em;
   height: 13px;
@@ -6684,10 +6688,10 @@ button {
   content: '';
   width: 40px;
   height: 40px;
-  border: 2px solid #d34d5e;
+  border: 2px solid rgb(191,48,62);
   border-radius: 50%;
   font-size: 17px;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   line-height: 36px;
   text-align: center;
   position: absolute;
@@ -6727,7 +6731,7 @@ button {
 .workout-featured .workout-exercises li:after {
   content: '';
   width: 2px;
-  background-color: #d34d5e;
+  background-color: rgb(191,48,62);
   position: absolute;
   top: 40px;
   left: 94px;
@@ -6789,7 +6793,7 @@ button {
 .postlist-exercises .post .entry-title-before {
   font-size: 13px;
   font-weight: 700;
-  color: #fda300;
+  color: rgb(236,102,0);
   text-transform: uppercase;
   margin-bottom: 1.2em;
 }
@@ -6928,7 +6932,7 @@ button {
 }
 .workout-similar .workout .workout-subtitle {
   font-size: 13px;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   text-transform: uppercase;
 }
 @media (max-width: 1199px) {
@@ -7017,7 +7021,7 @@ button {
 }
 .paging-navigation .pagination .page_prev:hover,
 .paging-navigation .pagination .page_next:hover {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 .paging-navigation .pagination .page-number {
   font-size: 17px;
@@ -7045,8 +7049,8 @@ button {
 }
 .paging-navigation .pagination .page-numbers:hover,
 .paging-navigation .pagination .page-numbers.current {
-  border-color: #d34d5e;
-  color: #d34d5e;
+  border-color: rgb(191,48,62);
+  color: rgb(191,48,62);
 }
 .paging-navigation .pagination .page-numbers.dots {
   border-color: #291c1c;
@@ -7152,8 +7156,8 @@ button {
 .comments-pagination a.current,
 .post-pagination span.current,
 .comments-pagination span.current {
-  border-color: #d34d5e;
-  color: #d34d5e;
+  border-color: rgb(191,48,62);
+  color: rgb(191,48,62);
 }
 .post-pagination {
   float: right;
@@ -7193,7 +7197,7 @@ button {
   display: block;
   font-size: 13px;
   font-weight: 700;
-  color: #d34d5e;
+  color: rgb(191,48,62);
   text-transform: uppercase;
   margin-bottom: 1em;
 }
@@ -7281,8 +7285,8 @@ button {
 }
 .page-links > a:hover,
 .page-links > span {
-  border-color: #d34d5e;
-  color: #d34d5e;
+  border-color: rgb(191,48,62);
+  color: rgb(191,48,62);
 }
 .page-links .page-links-title {
   display: inline-block;
@@ -7482,7 +7486,7 @@ button {
   transition: border-color 0.3s ease;
 }
 .minigallery_carousel li a:hover img {
-  border-color: #fda300;
+  border-color: rgb(236,102,0);
 }
 .minigallery_carousel .prev,
 .minigallery_carousel .next {
@@ -7490,7 +7494,7 @@ button {
   top: 50px;
   left: 10px;
   font-size: 40px;
-  color: #fda300;
+  color: rgb(236,102,0);
   line-height: 1em;
 }
 .minigallery_carousel .next {
@@ -7526,10 +7530,10 @@ button {
   color: #ffffff;
 }
 .panel.panel-default {
-  border-color: #fda300;
+  border-color: rgb(236,102,0);
 }
 .panel.panel-default .panel-heading {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 .panel.panel-danger {
   border-color: #e61c17;
@@ -7594,20 +7598,20 @@ button {
 /* Tooltips */
 /*-----------------------------------*/
 .tooltip.top .tooltip-arrow {
-  border-top-color: #fda300;
+  border-top-color: rgb(236,102,0);
 }
 .tooltip.left .tooltip-arrow {
-  border-left-color: #fda300;
+  border-left-color: rgb(236,102,0);
 }
 .tooltip.right .tooltip-arrow {
-  border-right-color: #fda300;
+  border-right-color: rgb(236,102,0);
 }
 .tooltip.bottom .tooltip-arrow {
-  border-bottom-color: #fda300;
+  border-bottom-color: rgb(236,102,0);
 }
 .tooltip-inner {
   color: #ffffff;
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
 }
 /* Tables */
 /*-----------------------------------*/
@@ -7652,7 +7656,7 @@ table tbody td {
 }
 /* Table Colors */
 thead th {
-  background-color: #fda300;
+  background-color: rgb(236,102,0);
   color: #fff;
 }
 .table-striped thead th {
@@ -7680,7 +7684,7 @@ thead th {
   background-color: #e61c17;
 }
 table {
-  border: 1px solid #fda300;
+  border: 1px solid rgb(236,102,0);
 }
 .table-striped .table {
   border-color: #14b096;
@@ -7708,7 +7712,7 @@ table {
 }
 @media (max-width: 767px) {
   .table-responsive {
-    border: 1px solid #fda300;
+    border: 1px solid rgb(236,102,0);
   }
   .table-responsive.table-striped {
     border-color: #14b096;

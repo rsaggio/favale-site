@@ -54,7 +54,7 @@
                                             <div class="page-desc" data-animate-in="fadeInRight" data-animate-out="fadeOutRight">
                                                 {{ banner.descricao }}
                                             <span class="angle"></span></div>
-                                            <a href="#" class="btn" data-animate-in="fadeInUp" data-animate-out="fadeOutDown"><span>Entrar em contato</span></a>
+                                            <a href="{{ path('formContato') }}" class="btn" data-animate-in="fadeInUp" data-animate-out="fadeOutDown"><span>Entrar em contato</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -92,7 +92,9 @@
                         <div class="section-title-before">Método</div>
                         <h2 class="section-title">Treinamento da Consciência Física</h2>
                         <div class="section-desc"><p>Sabemos que a renovação do comportamento corporal não é tão fácil, depende de observação e profundo conhecimento de si mesmo, qualidades que não conseguimos alcançar sem consciência corporal, treinamento e orientação especializada. É por isso que, nós interagimos nas relações interpessoais, no habitat e orientando para que “a consciência de nossos alunos seja a sua prevenção", por meio do "Treinamento da Consciência Física", proporcionando a melhora na qualidade de vida. 
-                        </p></div>
+                        </p>
+                        <a href="http://www.conscienciafisica.com.br/" class="btn" data-animate-in="fadeInUp" data-animate-out="fadeOutDown" target="_blank"><span>Detalhes do treinamento</span></a>
+                        </div>
                        
                     </div>
                     <div class="col-md-7">
@@ -165,7 +167,9 @@
                             <div class="entry-content">
                                 <p><strong>CREF: {{ professor.cref }}</strong></p>
                                 <p>{{ professor.descricao }}</p>
-                                <a href="#">Linkedin</a>
+                                {% if loop.first %}
+                                <a href="https://www.linkedin.com/in/wagner-favale-b687a222">Linkedin</a>
+                                {% endif %}
                             </div>
                             </article>
                     {% endfor %}
