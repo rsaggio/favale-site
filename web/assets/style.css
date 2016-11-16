@@ -7836,3 +7836,7 @@ li.social {
 .aboutUs-title {
   padding:50px 0;
 }
+
+#banner-aboutUs {
+  display:none;
+}
