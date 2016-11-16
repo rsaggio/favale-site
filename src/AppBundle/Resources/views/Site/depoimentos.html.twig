@@ -1,0 +1,26 @@
+{% extends 'AppBundle:Site:base.html.twig' %}
+
+{% block body %}
+
+<section class="main-row">
+	<h1 class="depoimento-title">Casos de sucesso</h1>
+	<div class="container" id="depoimentos">
+		<div class="row">
+			{% for depoimento in depoimentos %}
+			<article class="col-sm-12 post">
+					<img src="/uploads/{{ depoimento.foto }}" alt="{{					depoimento.titulo }}">
+				<div class="content">
+					<h3 class="entry-title"> {{ depoimento.titulo }} </h3>
+					<div class="entry-content">
+						<p>{{ depoimento.texto }}</p>
+					</div>	
+				</div>	
+			</article>
+			{% endfor %}
+		</div>
+	</div>
+	 <div class="text-center">
+                    <a href="{{ path('formContato') }}" class="btn btn-transparent btn-padding-big" data-animate-in="fadeInUp" data-animate-out="fadeOutDown"><span>Entrar em contato</span></a>
+                </div>
+</section>
+{% endblock %}

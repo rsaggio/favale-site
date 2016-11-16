@@ -67,4 +67,27 @@ class SiteController extends Controller
         ));
     }
 
+    /**
+     * @Route("/depoimentos", name="depoimentos")
+     * @Method({"GET", "POST"})
+     */
+    public function depoimentoAction() {
+        $em = $this->getDoctrine()->getManager();
+        $depoimentos = $em->getRepository('AppBundle:Depoimento')->findAll();
+        return $this->render('AppBundle:Site:depoimentos.html.twig', array(
+            'depoimentos' => $depoimentos
+        ));
+    }
+
+    /**
+     * @Route("/quemSomos", name="quemSomos")
+     * @Method({"GET", "POST"})
+     */
+    public function aboutUsAction() {
+        $depoimentos = [];
+        return $this->render('AppBundle:Site:aboutUs.html.twig', array(
+            'depoimentos' => $depoimentos
+        ));
+    }
+
 }

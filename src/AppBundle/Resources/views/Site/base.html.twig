@@ -13,7 +13,7 @@
     <!-- Core CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" media="screen" rel="stylesheet" type="text/css">
     <link href="{{ asset('assets/style.css') }}" media="screen" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}">
     <!-- Animate.css -->
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
 
@@ -25,14 +25,17 @@
 </head>
 
 <body>
-
+<div id="icones-redes">
+            <a href="http://www.facebook.com/FavaleFisicoSaude"><i class="icon-facebook"></i></a>
+            <a href="http://www.instagram.com/favalepersonal"><i class="icon-instagram"></i></a>
+        </div>  
 <div id="page" class="hfeed site">
 
     <!-- Header -->
     <header id="masthead" class="site-header">
-
+          
         <!-- Menu Button -->
-        <span id="menu-call" class="tficon-menu invisible"></span>
+        <span id="menu-call" class="tficon-menu invisible"> </span>
         <!--/ Menu Button -->
 
         <!-- Logo & Menu -->
@@ -47,6 +50,8 @@
                                 <li class="active"><a href="{{ path('homeSite') }}"><span>Home</span></a></li>
                                 <li><a href="{{ path('homeSite') }}#equipe"><span>Equipe</span></a></li>
                                 <li><a href="{{ path('parceiros') }}"><span>Parceiros</span></a></li>
+                                <li><a href="{{ path('depoimentos') }}"><span>Depoimentos</span></a></li>
+                                <li><a href="{{ path('quemSomos') }}"><span>Quem Somos</span></a></li>
                                 <li><a href="{{ path('homeBlog') }}"><span>Blog</span></a></li>
                                 <li><a href="{{ path('formContato') }}"><span>Contato</span></a></li>
                                 <li>
@@ -71,8 +76,9 @@
     <!-- Footer -->
     <footer class="site-footer" role="contentinfo">
         <ul class="footer-social">
+        <li><a class="link-instagram" href="http://www.instagram.com/favalepersonal" target="_blank"></a></li>
             <li><a class="link-facebook" href="http://www.facebook.com/FavaleFisicoSaude" target="_blank"></a></li>
-            <li><a class="link-insta" href="http://twitter.com/" target="_blank"></a></li>
+            
         </ul>
 
         <div class="copyright">&copy; 2016 Favale <br>Todos os direitos reservados.
@@ -125,5 +131,6 @@
   ga('send', 'pageview');
  
 </script>
+ {% block scripts %}{% endblock %}
 </body>
 </html>
